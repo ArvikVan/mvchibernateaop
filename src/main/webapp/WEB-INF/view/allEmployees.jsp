@@ -25,6 +25,9 @@
         <c:url var="updateButton" value="/updateInfo">
             <c:param name="empId" value="${emp.id}"/>
         </c:url>
+        <c:url var="deleteButton" value="/deleteEmployee">
+            <c:param name="empId" value="${emp.id}"/>
+        </c:url>
         <tr>
             <td>${emp.name}</td>
             <td>${emp.surname}</td>
@@ -32,10 +35,12 @@
             <td>${emp.salary}</td>
             <td>
                 <input type="button" value="Update" onclick="window.location.href = '${updateButton}'"/>
+                <input type="button" value="Delete" onclick="window.location.href = '${deleteButton}'"/>
             </td>
         </tr>
     </c:forEach>
 </table><br>
+<input type="button" value="add" onclick="window.location.href = 'addNewEmployee'"/>
 <input type="button" value="add" onclick="window.location.href = 'addNewEmployee'"/>
 
 
