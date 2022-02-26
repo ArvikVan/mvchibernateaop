@@ -28,7 +28,9 @@
             <td>${emp.salary}</td>
         </tr>
     </c:forEach>
-</table>
+</table><br>
+<input type="button" value="add" onclick="window.location.href = 'addNewEmployee'"/>
+
 
 </body>
 </html>
